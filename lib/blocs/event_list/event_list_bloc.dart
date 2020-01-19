@@ -8,7 +8,7 @@ class EventListBloc extends Bloc<EventListEvent, EventListState> {
   final EventListRepository _eventListRepository;
 
   EventListBloc({@required EventListRepository eventListRepository})
-      : assert(_eventListRepository != null),
+      : assert(eventListRepository != null),
         this._eventListRepository = eventListRepository;
 
   @override
